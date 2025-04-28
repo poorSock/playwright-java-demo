@@ -18,11 +18,16 @@ public class GoToPart {
     public void gotoTest1(){
         testPage
             .goTo();
+            //.login();
+        //anotherPage.doSomethingAfterLogin();
     }
 
     public void gotoTest2(Page page){
         new TestPage(page)
         .goTo();
+        //.login() //Returns Page after Login
+        //.doSomethingAfterLogin();
+        
     }
 
 }
